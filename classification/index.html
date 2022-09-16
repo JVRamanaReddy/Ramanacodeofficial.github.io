@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClassificationFigures</title>
+        <style>
+            .TwoDclass{height: 600px; width: 1000px; }
+            .ThreeDclass{width: 1000px; height: 600px; }
+            .TwoDclass-para{font-size: 50px; }
+            .DecisionBoundary{width: 800px; height: 600px; }
+            
+            div{color: green; font-size: 15px; margin: 2px 2px; }
+            body {counter-reset: counter1; }
+            h2 {counter-reset: counter2;}
+            h2:before { counter-increment: counter1;
+                content: "Section " counter(counter1) ". "; }
+            h3:before {counter-increment: counter2;
+                content: counter(counter1) "." counter(counter2) " ";
+            }
+        </style>
+    </head>
+
+    <!-- <div include-html="header.html" id="header_file"></div> -->
+    <!-- <h2>I m Main</h2> -->
+    <div >
+        <section>
+            <!-- Lumbar -->
+            <section> 
+                <h2>CSS Data upto Lumbar Vertebrae - Classification</h2>
+                    <h3>Classification Visualization in 3D</h3>
+                    <ul> 
+                        <li> A1 Given risks as it is</li>
+                        <object class="ThreeDclass" type="text/html" data="Lumbar_3D_A1.html" id="Lumbar_3D_A1_file"></object>
+                        <li> B1 type Combination (i.e., L -> Low; L-M & M-M & M-H -> Medium; H -> Hight})</li>
+                        <object class="ThreeDclass" type="text/html" data="Lumbar_3D_B1.html" id="Lumbar_3D_B1_file"></object>
+                        <li> B1 type Combination (i.e., L -> Low; L-M & M-M & M-H -> Medium; H -> Hight}) - Risk Only</li>
+                        <object class="ThreeDclass" type="text/html" data="Lumbar_3D_B1_RiskOnly.html" id="Lumbar_3D_B1_RiskOnly_file"></object>
+                        
+                    </ul>
+                    <h3>Classification Visualization in 2D</h3>
+                    <ul> 
+                        <li> B1 type Combination : LD1 vs LD2 </li>
+                        <object class="TwoDclass"  type="text/html" data="Lumbar_2D_B1_LD1vsLD2.html" id="Lumbar_2D_B1_LD1vsLD2_file"></object>
+                        <li> B1 type Combination : LD1 vs LD2 - Risk Only </li>
+                        <object class="TwoDclass"  type="text/html" data="Lumbar_2D_B1_LD1vsLD2_OnlyRisk.html" id="Lumbar_2D_B1_LD1vsLD2_OnlyRisk_file"></object>
+                        <li> B1 type Combination : LD2 vs LD3</li>
+                        <object class="TwoDclass"  type="text/html" data="Lumbar_2D_B1_LD2vsLD3.html" id="Lumbar_2D_B1_LD2vsLD3_file"></object>
+                        <li> B1 type Combination : LD2 vs LD3 - Risk Only</li>
+                        <object class="TwoDclass"  type="text/html" data="Lumbar_2D_B1_LD2vsLD3_OnlyRisk.html" id="Lumbar_2D_B1_LD2vsLD3_OnlyRisk_file"></object>
+                    </ul>
+                    <h3> Classification with DecisionBoundary </h3>
+                    <ul>
+                        <li> B1 type Combination : LD1 vs LD2 </li>
+                        <img class="DecisionBoundary" src="Lumbar_2D_B1_LD1vsLD2_DecisionBoundary.png">
+                        <li> B1 type Combination : LD2 vs LD3 </li> 
+                        <img class="DecisionBoundary" src="Lumbar_2D_B1_LD2vsLD3_DecisionBoundary.png">
+                    </ul>  
+            </section>
+            <!-- Thoracic -->
+            <section> 
+                <h2>CSS Data upto Thoracic Vertebrae : Classification</h2>
+                    <h3> Classification Visualization in 3D</h3>
+                    <ul> 
+                        <li> A1 Given risks as it is </li>
+                        <object class="ThreeDclass" type="text/html" data="Thoracic_3D_A1.html" id="Thoracic_3D_A1_file"></object>
+                        <li> B1 type Combination (i.e., L -> Low; L-M & M-M & M-H -> Medium; H -> Hight}) </li>
+                        <object class="ThreeDclass" type="text/html" data="Thoracic_3D_B1.html" id="Thoracic_3D_B1_file"></object>
+                        <li> B1 type Combination (i.e., L -> Low; L-M & M-M & M-H -> Medium; H -> Hight}) - Risk Only </li>
+                        <object class="ThreeDclass" type="text/html" data="Thoracic_3D_B1_RiskOnly.html" id="Thoracic_3D_B1_RiskOnly_file"></object>
+                    </ul>
+                    <h3> Classification Visualization in 2D</h3>
+                    <ul> 
+                        <li> B1 type Combination : LD1 vs LD2 </li>
+                        <object class="TwoDclass"  type="text/html" data="Thoracic_2D_B1_LD1vsLD2.html"></object>
+                        <li> B1 type Combination : LD1 vs LD2 - Risk Only </li>
+                        <object class="TwoDclass"  type="text/html" data="Thoracic_2D_B1_LD1vsLD2_OnlyRisk.html" id="Thoracic_2D_B1_LD1vsLD2_OnlyRisk_file"></object>
+                        <li> B1 type Combination : LD2 vs LD3 </li>
+                        <object class="TwoDclass"  type="text/html" data="Thoracic_2D_B1_LD2vsLD3.html" id="Thoracic_2D_B1_LD2vsLD3_file"></object>
+                        <li> B1 type Combination : LD2 vs LD3 - Risk Only </li>
+                        <object class="TwoDclass"  type="text/html" data="Thoracic_2D_B1_LD2vsLD3_OnlyRisk.html" id="Thoracic_2D_B1_LD2vsLD3_OnlyRisk_file"></object>
+                    </ul>
+                    <h3> Classification with DecisionBoundary </h3>
+                    <ul>
+                        <li> B1 case Decision Boundary </li> 
+                        <img class="DecisionBoundary" src="Thoracic_2D_B1_LD1vsLD2_DecisionBoundary.png">
+                        <li> B1 case Decision Boundary </li> 
+                        <img class="DecisionBoundary" src="Thoracic_2D_B1_LD2vsLD3_DecisionBoundary.png">
+                    </ul>  
+            </section>
+    </section>
+                 
+    </div>
+    <!--    -->
+    
+
+    
+    
+
+    
+
+    
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/include-html.min.js"></script>
+</html>
